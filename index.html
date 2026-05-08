@@ -8,6 +8,28 @@
     <title>Projeto Web</title>
 </head>
 <body>
+    <header>
+        <h1>Meus Projetos</h1>
+        <p>Os melhores Projetos Devs</p>
+        <div>
+            <input type="button" class="cor" onclick="trocar('#3AE8B1')">
+            <input type="button" class="cor" onclick="trocar('#C13AF2')">
+            <input type="button" class="cor" onclick="trocar('#FBFF24')">
+        </div>
+    </header>
+    <main>
+        <button onclick="cardProdutos(produtos)">Mostrar Todos(Map)</button>
+        <button onclick="filtrarPromocoes()">Apenas Promoções(Filter)</button>
+        <button onclick="calcularTotal()">Calcular Total(Reduce)</button>
+
+        <div class="lista-produtos" id="grid"></div>
+        <h2 id="resultado-total"></h2>
+    </main>
+    <footer>
+        <p>&copy;-2026- Todos os direitos reservados</p>
+    </footer>
+
+
     
     <!-- JS EXTERNO -->
      <script src="./src/js/script.js"></script>
